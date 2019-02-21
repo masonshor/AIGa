@@ -1,0 +1,301 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*************CUSTOM CSS***************/
+
+html{
+    font-family: benton-sans, Arial, sans-serif;
+    font-size: 0.9em;
+    background: white;
+}
+@keyframes next{
+    0% {transform: translate(0, 0)}
+    50% {transform: translate(0, 2vh)}
+    100% {transform: translate(0, 0)}
+}
+@keyframes nextmain{
+    0% {transform: rotate(180deg) translate(0, 0)}
+    50% {transform: rotate(180deg) translate(0, -2vh)}
+    100% {transform: rotate(180deg) translate(0, 0)}
+}
+h3 {
+    font-family: benton-sans, Arial, sans-serif;
+}
+h3.next {
+    color: rgb(247, 69, 80);
+    font-size: 3em;
+    font-weight: 800;
+    width: 4vw;
+    padding-left: 48vw;
+    position: fixed;
+    z-index: 100;
+    bottom: 5vh;
+}
+a {
+    text-decoration: none;
+}
+h3.next:hover {
+    transform-origin: center center;
+    animation: next .75s ease-in-out infinite normal forwards;
+}
+h3.nextagain {
+    color: rgb(247, 69, 80);
+    font-size: 3em;
+    font-weight: 800;
+    width: 4vw;
+    margin-left: 48vw;
+    position: fixed;
+    z-index: 100;
+    bottom: 5vh;
+}
+h3.nextagain:hover {
+    transform-origin: center center;
+    animation: next .75s ease-in-out infinite normal forwards;
+}
+.BG {
+    z-index: -100;
+    position: fixed;
+    margin-left: 20vw;
+    margin-top: 5vh;
+}
+h3.nextmain {
+    color: white;
+    font-size: 3em;
+    font-weight: 800;
+    width: 4vw;
+    margin-left: 80vw;
+    top: 2vh;
+    position: fixed;
+    z-index: 100;
+    transform-origin: center center;
+    animation: nextmain .75s ease-in-out infinite normal forwards;
+}
+h1.intro {
+    color: rgb(0, 0, 256);
+    font-size: 5em;
+    line-height: 1.2em;
+    width: 80vw;
+    padding-top: 20vh;
+    padding-left: 10vw;
+    font-weight: 800;
+}
+h2.intro {
+    color: #F74550;
+    font-size: 1.5em;
+    line-height: 1.2em;
+    width: 60vw;
+    padding-top: 5vh;
+    padding-left: 11vw;
+    font-family: gemeli-mono;
+    font-weight: 400;
+}
+.clear{
+    clear: both;
+}
+
+#scroll{
+/*    float:right;*/
+/*    padding: 12% 5% 0 0;*/
+    display: block;
+    left: 67.5vw;
+    width: 20vw;
+    padding: 2% 2% 0% 2%;
+    position: fixed;
+    z-index: 100;
+} 
+
+iframe {
+/*    position:fixed;*/
+    z-index: 0;
+    left: 0px;
+    top: 0px;
+    width: 100vw; 
+    height: 100vh; 
+    
+}
+h1{
+    line-height: 2.5em;
+    font-weight: 800;
+}
+p{
+    line-height: 1.6em;
+    text-align: left;
+    color: #ffffff;   
+}
+#back {
+    padding-left: 14vw;
+    text-decoration: none;
+    color: blue;
+    font-size: 2.5em;
+    font-weight: 700;
+    background: none;
+    letter-spacing: 5px;
+}
+#back:hover {
+    color: red;
+}
+body p:nth-child(even){
+    font-weight: 600;
+/*    letter-spacing: px;*/
+    line-height: normal;
+    text-align: right;
+        margin-left: 20%;
+    color:blue;
+/*    background: white;*/
+    padding: 10px;
+}
+body p:nth-child(odd){
+    font-weight: 600;
+    letter-spacing: 0.5px;
+        line-height: normal;
+    margin-right: 20%;
+    text-align: left;
+/*    background: rgb(247, 69, 80);*/
+/*    background: white;*/
+    padding: 10px;
+    color: blue;
+            outline-color: blue;
+    outline-width: 2px;
+    outline-style: solid;
+}
+::-webkit-scrollbar{
+    display: none;
+}
+.red {
+    background: rgb(247, 69, 80);
+    font-size:0em;
+}
+.block {
+  height: 5em;
+  line-height: 5em;
+  width: 10em;
+  color: #fdfdfd;
+  text-align: center;
+  margin: 1em auto;
+}
+.animatable {
+  /* initially hide animatable objects */
+  visibility: hidden;
+  /* initially pause animatable objects their animations */
+  -webkit-animation-play-state: paused;   
+  -moz-animation-play-state: paused;     
+  -ms-animation-play-state: paused;
+  -o-animation-play-state: paused;   
+  animation-play-state: paused; 
+}
+/* show objects being animated */
+.animated {
+  visibility: visible;
+  -webkit-animation-fill-mode: both;
+  -moz-animation-fill-mode: both;
+  -ms-animation-fill-mode: both;
+  -o-animation-fill-mode: both;
+  animation-fill-mode: both;
+  -webkit-animation-duration: 1s;
+  -moz-animation-duration: 1s;
+  -ms-animation-duration: 1s;
+  -o-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-play-state: running;
+  -moz-animation-play-state: running;
+  -ms-animation-play-state: running;
+  -o-animation-play-state: running;
+  animation-play-state: running;
+}
+@-webkit-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-webkit-transform: translateY(20px);
+	}	100% {
+		opacity: 1;
+		-webkit-transform: translateY(0);
+	}
+}
+@-moz-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-moz-transform: translateY(20px);
+	}
+
+	100% {
+		opacity: 1;
+		-moz-transform: translateY(0);
+	}
+}
+@-o-keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		-o-transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		-o-transform: translateY(0);
+	}
+}
+@keyframes fadeInUp {
+	0% {
+		opacity: 0;
+		transform: translateY(20px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0);
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
